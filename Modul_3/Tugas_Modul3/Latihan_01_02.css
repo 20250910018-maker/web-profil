@@ -1,0 +1,102 @@
+
+/* Pengaturan halaman */
+body {
+    margin: 0;
+    padding: 25px;
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+/* Bagian Header */
+body > font[size="7"] {
+    color: #003366;
+    font-weight: bold;
+}
+
+body > font[size="5"] {
+    color: #0066cc;
+    font-weight: bold;
+}
+
+body > font[size="3"] {
+    display: inline-block;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+/* Garis pembatas */
+hr {
+    border: none;
+    height: 4px;
+    background-color: #003366;
+    margin: 20px 0;
+}
+
+/* Bagian utama */
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+/* Kotak artikel */
+article {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Judul */
+h1 {
+    color: #003366;
+    text-align: center;
+    font-size: 30px;
+    border-bottom: 3px solid #0066cc;
+    padding-bottom: 15px;
+}
+
+/* Judul Visi dan Misi */
+dt {
+    color: #0066cc;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Isi Visi dan Misi */
+dd {
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Daftar Misi */
+ol {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 12px;
+    padding-left: 5px;
+}
+
+/* Tampilan HP */
+@media screen and (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    article {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    dd {
+        font-size: 14px;
+    }
+}

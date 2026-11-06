@@ -1,0 +1,40 @@
+
+body {
+    margin: 0;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+}
+
+.header {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 35px;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 25px;
+    color: #0066cc;
+    margin-top: 0;
+}
+
+p {
+    font-size: 16px;
+    color: #333333;
+    line-height: 1.6;
+}
+
+hr {
+    border: none;
+    height: 3px;
+    background-color: #003366;
+    margin-top: 20px;
+}
