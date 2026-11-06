@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Keluarga</title>
+
+    <style>
+        /* Pengaturan dasar */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f8fc;
+            color: #243b53;
+        }
+
+        /* Bagian header */
+        header {
+            background-color: #8bbce8;
+            color: #173b68;
+            text-align: center;
+            padding: 30px;
+        }
+
+        header h1 {
+            font-size: 32px;
+        }
+
+        /* Menu navigasi */
+        nav {
+            background-color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: #24558a;
+            text-decoration: none;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        /* Efek saat menu disentuh */
+        nav a:hover {
+            color: blue;
+        }
+
+        /* Bagian konten */
+        section {
+            background-color: white;
+            width: 85%;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        section h2 {
+            color: #24558a;
+        }
+
+        section p {
+            text-align: justify;
+        }
+
+        /* Daftar */
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* Tabel anggota keluarga */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: #397bb9;
+            color: white;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        /* Silsilah keluarga */
+        #silsilah {
+            text-align: center;
+            background-color: #e6f3ff;
+        }
+
+        #silsilah p {
+            text-align: center;
+        }
+
+        /* Foto keluarga */
+        figure {
+            text-align: center;
+        }
+
+        figure img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+        }
+
+        figcaption {
+            color: gray;
+            font-style: italic;
+        }
+
+        /* Pesan keluarga */
+        blockquote {
+            background-color: #eaf4ff;
+            padding: 15px;
+            border-left: 5px solid #397bb9;
+        }
+
+        /* Kontak */
+        #kontak p {
+            background-color: #f1f7fd;
+            padding: 10px;
+        }
+
+        /* Tombol Kembali ke Web Pribadi */
+        .back-menu {
+            text-align: center;
+            margin: 35px 0;
+        }
+
+        .back-menu a {
+            display: inline-block;
+            background: linear-gradient(135deg, #24558a, #4a90d9);
+            color: white;
+            padding: 14px 30px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 16px;
+            box-shadow: 0 5px 12px rgba(36, 85, 138, 0.3);
+            transition: 0.3s;
+        }
+
+        .back-menu a:hover {
+            background: linear-gradient(135deg, #173b68, #2878b5);
+            transform: translateY(-4px);
+            box-shadow: 0 8px 18px rgba(36, 85, 138, 0.4);
+        }
+
+        /* Bagian bawah website */
+        footer {
+            background-color: #24558a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Tampilan HP */
+        @media screen and (max-width: 600px) {
+            header h1 {
+                font-size: 24px;
+            }
+
+            section {
+                width: 90%;
+                padding: 15px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            table {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>PROFIL KELUARGA BAHAGIA</h1>
+        <h3>"Keluarga adalah tempat pulang terbaik."</h3>
+        <hr>
+        <p>Selamat datang di halaman profil keluarga kami!</p>
+    </header>
+
+    <nav>
+        <a href="#tentang">Tentang Keluarga</a> |
+        <a href="#anggota">Anggota Keluarga</a> |
+        <a href="#silsilah">Silsilah</a> |
+        <a href="#galeri">Galeri</a> |
+        <a href="#kontak">Kontak</a>
+    </nav>
+
+    <hr>
+
+    <section id="tentang">
+        <h2>Tentang Keluarga Kami</h2>
+        <p>
+            Kami adalah keluarga yang terdiri dari ayah
+            yang bernama Saeful Rohmat, dan ibu yang bernama Yeni Suryeni,
+            dan anak-anak yang saling menyayangi serta mendukung
+            satu sama lain. Bagi kami, keluarga bukan hanya tentang
+            hubungan darah, tetapi juga tentang kasih sayang,
+            kebersamaan, dan saling pengertian.
+        </p>
+
+        <ul>
+            <li><b>Nama Keluarga:</b> Keluarga Bahagia</li>
+            <li><b>Alamat:</b> Kuningan, Jawa Barat</li>
+            <li><b>Jumlah Anggota:</b> 4 Orang</li>
+            <li><b>Motto:</b> Bersama Kita Bahagia</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <section id="anggota">
+        <h2>Anggota Keluarga</h2>
+
+        <table>
+            <tr>
+                <th>No.</th>
+                <th>Nama</th>
+                <th>Hubungan</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Bapak Saeful Rohmat</td>
+                <td>Ayah</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Ibu Yeni Suryeni</td>
+                <td>Ibu</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Fahmi Daris Fauzan</td>
+                <td>Anak Pertama</td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>Azmya Raysa Nurjanah</td>
+                <td>Anak Kedua</td>
+            </tr>
+        </table>
+    </section>
+
+    <hr>
+
+    <section id="silsilah">
+        <h2>Silsilah Keluarga</h2>
+
+        <h3>Bapak Saeful &amp; Ibu Yeni</h3>
+        <p>|</p>
+        <p>Fahmi (Anak Pertama)</p>
+        <p>Azmya (Anak Kedua)</p>
+    </section>
+
+    <hr>
+
+    <section id="galeri">
+        <h2>Galeri Kenangan Keluarga</h2>
+
+        <figure>
+            <img src="foto1.jpg"
+                 alt="Foto bersama keluarga"
+                 width="300">
+
+            <figcaption>
+                Kenangan indah bersama keluarga
+            </figcaption>
+        </figure>
+    </section>
+
+    <hr>
+
+    <section id="kegiatan">
+        <h2>Kegiatan Favorit Keluarga</h2>
+
+        <ol>
+            <li>Makan bersama di akhir pekan.</li>
+            <li>Berlibur ke tempat wisata.</li>
+            <li>Menonton film bersama.</li>
+            <li>Membersihkan rumah bersama-sama.</li>
+            <li>Merayakan ulang tahun anggota keluarga.</li>
+        </ol>
+    </section>
+
+    <hr>
+
+    <section id="pesan">
+        <h2>Pesan untuk Keluarga</h2>
+
+        <blockquote>
+            "Sejauh apa pun kita melangkah, keluarga akan selalu
+            menjadi tempat untuk berbagi cerita, mendapatkan
+            dukungan, dan menemukan kebahagiaan."
+        </blockquote>
+    </section>
+
+    <hr>
+
+    <section id="kontak">
+        <h2>Informasi Kontak</h2>
+
+        <p><b>Nama Kepala Keluarga:</b> Bapak Saeful Rohmat</p>
+        <p><b>Alamat:</b> Kuningan, Jawa Barat</p>
+        <p><b>Email:</b> fauzanfahmidaris@gmail.com</p>
+    </section>
+
+    <!-- Tombol Kembali ke Web Pribadi -->
+    <div class="back-menu">
+        <a href="../WebPribadi.html">
+            &#8592; Kembali ke Web Pribadi
+        </a>
+    </div>
+
+    <hr>
+
+    <footer>
+        <h3>Keluarga Bahagia, Hidup Lebih Bermakna</h3>
+    </footer>
+
+</body>
+</html>
