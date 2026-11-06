@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f4f9;
+    color: #333;
+    line-height: 1.7;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #071d49, #174b8c);
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+/* NAVIGASI */
+nav {
+    background-color: #071d49;
+    padding: 16px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #e0ad35;
+}
+
+/* GARIS PEMBATAS */
+hr {
+    border: none;
+    height: 2px;
+    background-color: #d6dce5;
+    margin: 25px 0;
+}
+
+/* SECTION */
+section {
+    background-color: white;
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+section h2 {
+    color: #0b2b59;
+    font-size: 26px;
+    margin-bottom: 20px;
+    border-left: 5px solid #d4a32e;
+    padding-left: 12px;
+}
+
+section h3 {
+    color: #174b8c;
+    margin: 20px 0 10px;
+}
+
+section p {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+/* ARTICLE DAN DIV */
+article {
+    background-color: white;
+    max-width: 1100px;
+    margin: 25px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+article h1 {
+    color: #0b2b59;
+    margin-bottom: 20px;
+}
+
+/* VISI MISI */
+dl {
+    margin-top: 15px;
+}
+
+dt {
+    color: #174b8c;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 0 8px;
+}
+
+dd {
+    margin-left: 20px;
+    text-align: justify;
+}
+
+/* LIST */
+ul, ol {
+    padding-left: 30px;
+    margin: 10px 0 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+li::marker {
+    color: #174b8c;
+}
+
+/* GAMBAR */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    border-radius: 8px;
+}
+
+/* TABEL DOSEN */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    background-color: white;
+}
+
+caption {
+    color: #0b2b59;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+th {
+    background-color: #0b2b59;
+    color: white;
+    padding: 14px;
+    text-align: center;
+}
+
+td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: #f1f4f9;
+}
+
+tr:hover {
+    background-color: #e4ecf7;
+}
+
+/* DETAIL PROGRAM STUDI */
+details {
+    background-color: #f1f4f9;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+    border-left: 4px solid #174b8c;
+}
+
+summary {
+    color: #0b2b59;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+details p {
+    margin-top: 12px;
+}
+
+/* LINK */
+a {
+    color: #174b8c;
+    transition: 0.3s;
+}
+
+section a {
+    font-weight: bold;
+}
+
+section a:hover {
+    color: #d4a32e;
+}
+
+/* KONTAK */
+#kontak {
+    border-top: 4px solid #d4a32e;
+}
+
+/* FOOTER */
+footer {
+    background-color: #071d49;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* BIODATA */
+#profil img,
+#tentang img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #174b8c;
+}
+
+/* RESPONSIVE HP DAN TABLET */
+@media screen and (max-width: 768px) {
+
+    header {
+        padding: 30px 15px;
+    }
+
+    header h1 {
+        font-size: 27px;
+    }
+
+    nav {
+        padding: 12px 5px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
+        font-size: 13px;
+    }
+
+    section,
+    article {
+        margin: 15px;
+        padding: 20px;
+    }
+
+    section h2 {
+        font-size: 22px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    #profil img,
+    #tentang img {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+/* RESPONSIVE LAYAR KECIL */
+@media screen and (max-width: 480px) {
+
+    header h1 {
+        font-size: 23px;
+    }
+
+    nav a {
+        font-size: 12px;
+        margin: 4px;
+    }
+
+    section,
+    article {
+        padding: 15px;
+    }
+
+    table {
+        font-size: 10px;
+    }
+
+    th, td {
+        padding: 6px;
+    }
+}
